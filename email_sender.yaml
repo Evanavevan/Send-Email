@@ -1,0 +1,44 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: email-sender-deploy
+  namespace: default
+  labels:
+    creation_method: manual
+    env: pod
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: email-sender
+  template:
+    metadata:
+      labels:
+        app: email-sender
+    spec:
+      containers:
+        - image: 'registry.jiangxingai.com:5000/base/email-sender:email-0.1.2'
+          name: email-sender
+          ports:
+          - containerPort: 9995
+            protocol: TCP
+
+---
+# email-sender service
+apiVersion: v1
+kind: Service
+metadata:
+  name: email-sender-service
+  namespace: default
+  
+spec:
+  type: NodePort
+  sessionAffinity:
+  selector:
+    app: email-sender
+  ports:
+  - name: http
+    protocol: TCP
+    port: 9995
+    nodePort: 30995
+    targetPort: 9995

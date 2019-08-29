@@ -1,0 +1,18 @@
+<!-- 账户审核成功 -->
+<html>
+    <head>您好，{{ client }}<br></head>
+    <body>
+        <p>
+            非常感谢您使用江行物联网平台。<br>
+            您的账号已通过审核，您可以通过平台登录界面进行登录。<br>
+            <button style="background-color: rgb(43, 174, 226)"><a href="{{ verify_link }}">登录平台</a></button><br><br>
+            您也可以复制以下链接到浏览器中打开：<a href="{{ verify_link }}">{{ verify_link }}</a><br><br>
+            祝您使用愉快！
+        </p>
+        <p>
+            联系电话：+86 0755-86715502<br>
+            商务邮箱：business@jiangxing.ai<br>
+            官方网站：<a href="https://www.jiangxingai.com">www.jiangxingai.com</a>
+        </p>
+    </body>
+</html>
