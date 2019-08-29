@@ -27,9 +27,9 @@ version = "0.0.1"
 setuptools.setup(
     name="email-sender",
     version=version,
-    author="tonyliu",
-    author_email="tonyliu@jiangxing.ai",
-    description="A small module for jx to send emails",
+    author="evan",
+    author_email="1365205439@qq.com",
+    description="A small module to send emails",
     long_description=long_description,
     long_description_content_type="text/markdown",
     packages=setuptools.find_packages(exclude=["tests"]),

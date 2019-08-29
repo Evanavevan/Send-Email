@@ -17,7 +17,7 @@ spec:
         app: email-sender
     spec:
       containers:
-        - image: 'registry.jiangxingai.com:5000/base/email-sender:email-0.1.2'
+        - image:
           name: email-sender
           ports:
           - containerPort: 9995
