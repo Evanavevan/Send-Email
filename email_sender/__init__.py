@@ -2,4 +2,4 @@
 # -*- coding:utf-8 -*-
 
 name = "email_sender"
-usage = "use jiangxing email box send email"
+usage = "send email"

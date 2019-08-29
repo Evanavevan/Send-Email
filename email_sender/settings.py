@@ -23,8 +23,8 @@ settings = {
     "email": {
         "smtp_host": "smtp.exmail.qq.com",
         "smtp_port": 25,
-        "mail_user": "jxzn@jiangxing.ai",
-        "mail_pwd": "e2wGaHbiHSRHXktF",
+        "mail_user": "evan",
+        "mail_pwd": "xxxxxxxxxxx",
     },
     "topic": "email",
     "log_dir": "/var/log",

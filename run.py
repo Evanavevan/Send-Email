@@ -3,6 +3,5 @@
 
 
 if __name__ == "__main__":
-    # from jxemail.run import main
     from email_sender.run import main
     main()
